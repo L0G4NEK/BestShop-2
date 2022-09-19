@@ -1,0 +1,57 @@
+.main-btn {
+  padding: 22px 92px;
+  border-radius: 40px;
+  background: $color-primary;
+  font-family: $open-sans;
+  font-weight: bold;
+  color: $color-white;
+  text-decoration: none;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+
+  @include desktop {
+    padding: 22px 157px;
+  }
+}
+
+.btn-begin {
+  padding: 15px 57px;
+  font-family: $open-sans;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 23px;
+  color: $color-white;
+  position: relative;
+  bottom: -30px;
+
+  @media (max-width: 980px) {
+    position: absolute;
+    bottom: -20px;
+  }
+}
+
+.btn-red {
+  background-color: $color-redish;
+}
+
+.btn-green {
+  background-color: $color-green;
+}
+
+.btn-blue {
+  background-color: $color-primary;
+  bottom: -35px;
+
+  @media (max-width: 980px) {
+    bottom: -20px;
+  }
+}
+
+.btn-submit {
+  margin-top: 40px;
+  padding: 20px 97px 19px;
+  border: none;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  border-radius: 35px;
+  color: $color-white;
+}

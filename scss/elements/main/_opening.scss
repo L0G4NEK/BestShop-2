@@ -1,0 +1,31 @@
+.opening {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+
+  &__header {
+    margin-top: 130px;
+  }
+
+  &__description {
+    max-width: 70%;
+    font-family: $open-sans;
+    margin: 20px auto 60px;
+  }
+
+  &__img {
+    height: auto;
+    width: 200vw;
+    margin-top: 74px;
+    align-self: center;
+
+    @include tablet {
+      width: 150vw;
+    }
+
+    @include desktop{
+      width: 100vw;
+    }
+  }
+}

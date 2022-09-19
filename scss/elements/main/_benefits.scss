@@ -1,0 +1,178 @@
+.benefits {
+  background-color: $color-light-grey;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 920px) {
+    .line {
+      height: 4px;
+      width: 328px;
+    }
+
+    .line-red {
+      background-color: $color-redish;
+    }
+
+    .line-blue {
+      background-color: $color-primary;
+    }
+
+    .line-green {
+      background-color: $color-green;
+    }
+  }
+
+  &__article {
+    padding: 0 20px 0 36px;
+    max-width: 1124px;
+    margin: 42px auto;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+
+    &:first-child {
+      flex-direction: column-reverse;
+    }
+
+    @media (min-width: 920px) {
+      flex-direction: row;
+
+      &:first-child {
+        flex-direction: row;
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 416px;
+    }
+
+  }
+
+  p {
+    font-family: $open-sans;
+    margin: 30px 0 50px;
+  }
+
+  &__article-last {
+    margin: 37px auto;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: center;
+
+    @media (min-width: 920px) {
+      flex-direction: row;
+    }
+  }
+
+  &__article-last-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-white;
+    border: 1px solid #E8E9ED;
+    padding: 30px 35px;
+    border-radius: 5px;
+
+    @media (min-width: 920px) {
+      max-width: 632px;
+    }
+  }
+
+  .macbook {
+    align-self: center;
+    height: 110px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 920px) {
+      height: 219px;
+    }
+  }
+
+  .macbook-rectangle {
+    margin: 113px 98px 38px;
+    position: relative;
+  }
+
+  .macbook-rectangle::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: $color-redish;
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    transform: rotate(45deg);
+
+    @media (min-width: 920px)  {
+      width: 180px;
+      height: 180px;
+      top: -40px;
+    }
+  }
+
+  .iphon {
+    align-self: center;
+    width: 170px;
+    z-index: 2;
+
+    @media (min-width: 920px) {
+      width: 429px;
+    }
+  }
+
+  .iphon-circle {
+    position: relative;
+    margin: 29px 34px 36px;
+  }
+
+  .iphon-circle::before {
+    content: "";
+    width: 132px;
+    height: 132px;
+    background-color: $color-primary;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -10px;
+
+    @media (min-width: 920px) {
+      height: 320px;
+      width: 320px;
+      top: -20px;
+  }
+  }
+
+  .trumpet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 208px;
+    background-color: $color-green;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+
+    @media (min-width: 920px) {
+      width: 400px;
+      height: 370px;
+    }
+
+    img {
+      width: 296px;
+      margin: auto;
+    }
+  }
+}
